@@ -6,13 +6,17 @@ using UnityEngine.UI;
 [RequireComponent(typeof(FileReader))]
 public class WorldManager : MonoBehaviour
 {
+    #region map and file reader
     [Header("Map Name")]
     [SerializeField] private string mapName = "";
 
     private FileReader fileReader;
 
     private AI.Dijkstra dijkstra;
+    #endregion
 
+    #region Prefabs
+    [Header("Prefabs")]
     [SerializeField] private GameObject MapBuilderPrefab = null;
     private GameObject MapBuilderObject = null;
     MapBuilder builder = null;
@@ -25,6 +29,7 @@ public class WorldManager : MonoBehaviour
 
     [SerializeField] private GameObject PlayerManagerPrefab = null;
     private GameObject PlayerManager = null;
+    #endregion
 
     private int currentWave = 0;
     Dictionary<int, Int2> waveData;
@@ -33,6 +38,8 @@ public class WorldManager : MonoBehaviour
     [SerializeField] private GameObject HealthPanel = null;
     [SerializeField] private GameObject GameOverPanel = null;
 
+    [Header("Misc")]
+    [SerializeField] private float displacement = 2.0f;
     private bool gameIsOver = false;
 
     private void Awake()
@@ -108,4 +115,6 @@ public class WorldManager : MonoBehaviour
     }
 
     public bool isGameOver { get { return gameIsOver; } }
+
+    public float getDisplacement {  get { return displacement; } }
 }

@@ -26,7 +26,7 @@ public class MapBuilder : MonoBehaviour
             for (int x = 0; x < map.GetLength(0); x++)
             {
                 Tile tempTile = tileDictionary.getTile(TileMethods.TypeById[map[x, y]]);
-                GameObject tempObj = Instantiate(tempTile.getPrefab, new Vector3Int(x * 2, 0, y * 2), Quaternion.Euler(0, 90, 0));
+                GameObject tempObj = Instantiate(tempTile.getPrefab, new Vector3Int(x * (int)transform.parent.GetComponent<WorldManager>().getDisplacement, 0, y * (int)transform.parent.GetComponent<WorldManager>().getDisplacement), Quaternion.Euler(0, 90, 0));
 
                 if(tempTile.getType == TileType.Start) { StartVector = new Vector2Int(x, y); }
                 else if(tempTile.getType == TileType.End) { EndVector = new Vector2Int(x,y); }

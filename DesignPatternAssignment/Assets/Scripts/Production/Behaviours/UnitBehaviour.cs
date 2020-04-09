@@ -17,7 +17,7 @@ public class UnitBehaviour : MonoBehaviour, iDamageable
         Health = unitData.getHealth;
         Path = newPath;
         currentPos = 0;
-        transform.position = new Vector3(Path[currentPos].x*2, transform.position.y, Path[currentPos].y*2);
+        transform.position = new Vector3(Path[currentPos].x* (int)transform.parent.GetComponentInParent<WorldManager>().getDisplacement, transform.position.y, Path[currentPos].y* (int)transform.parent.GetComponentInParent<WorldManager>().getDisplacement);
         InvokeRepeating(nameof(MoveOnPath), 0, unitData.getSpeed);
     }
 

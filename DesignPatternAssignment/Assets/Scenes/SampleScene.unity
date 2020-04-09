@@ -786,6 +786,16 @@ PrefabInstance:
       propertyPath: GameOverPanel
       value: 
       objectReference: {fileID: 784465525}
+    - target: {fileID: 8541116483316206336, guid: ad4da8408a82691419a5f2810791e87b,
+        type: 3}
+      propertyPath: mapName
+      value: map_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8541116483316206336, guid: ad4da8408a82691419a5f2810791e87b,
+        type: 3}
+      propertyPath: displacement
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8541116483316206337, guid: ad4da8408a82691419a5f2810791e87b,
         type: 3}
       propertyPath: m_Name

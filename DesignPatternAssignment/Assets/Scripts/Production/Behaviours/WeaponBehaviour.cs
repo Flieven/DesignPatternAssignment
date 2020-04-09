@@ -20,6 +20,6 @@ public class WeaponBehaviour : MonoBehaviour
         spawnedBullet.GetComponent<BulletBehaviour>().Reset();
         spawnedBullet.transform.position = spawnPoint.position;
         spawnedBullet.SetActive(true);
-        spawnedBullet.GetComponent<BulletBehaviour>().Push(transform.forward);
+        spawnedBullet.GetComponent<BulletBehaviour>().Push(spawnPoint.forward);
     }
 }

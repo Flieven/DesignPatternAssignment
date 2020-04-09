@@ -298,7 +298,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24bac96183ecc5349a43ce1b1dc7c2b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firingTime: 1
+  overlapRadius: 3
+  firingTime: 0.5
+  TowerHead: {fileID: 7391422965515881056}
 --- !u!114 &-8256547335417537476
 MonoBehaviour:
   m_ObjectHideFlags: 0
