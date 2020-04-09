@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5527910760479239807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5527910760479239804}
+  - component: {fileID: 5527910760479239805}
+  - component: {fileID: 5527910760479239806}
+  m_Layer: 0
+  m_Name: DictionaryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5527910760479239804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5527910760479239807}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5527910760479239805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5527910760479239807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83857e745f085a47805e71ffbf8472b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TileArray:
+  - {fileID: 11400000, guid: 15fa68003a97eb54fa923472448e7ce2, type: 2}
+  - {fileID: 11400000, guid: 8fff19bbac93fd54ebf0e34a77d47fb7, type: 2}
+  - {fileID: 11400000, guid: af330a845f89c844e8439c04fae68641, type: 2}
+  - {fileID: 11400000, guid: a42b1d9e237478f4e893bb3a0c61be1d, type: 2}
+  - {fileID: 11400000, guid: 5849c7af81a540c45ae0efa77622b4af, type: 2}
+  - {fileID: 11400000, guid: 928945c91ad924c4d8f42eaa9bf7fb44, type: 2}
+--- !u!114 &5527910760479239806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5527910760479239807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341295e72c7e90242ac698df111ac5ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitArray:
+  - {fileID: 11400000, guid: 9880ec5d8eb536d4aab23b19ecf6e350, type: 2}
+  - {fileID: 11400000, guid: d40ba8c7f5aae634b94f79177804727f, type: 2}
